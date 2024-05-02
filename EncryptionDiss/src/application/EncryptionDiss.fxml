@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.fxml.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EncryptionDissController">
+   <children>
+      <Label fx:id="title" alignment="TOP_CENTER" layoutX="234.0" layoutY="72.0" text="Encryption Program" />
+      <TextField fx:id="inputField" layoutX="226.0" layoutY="138.0" promptText="Enter text to encrypt/decrypt" />
+      <TextField fx:id="keyField" layoutX="226.0" layoutY="205.0" promptText="Enter key" />
+      <Button layoutX="139.0" layoutY="138.0" mnemonicParsing="false" onAction="#encrypt" text="Encrypt" />
+      <Button layoutX="395.0" layoutY="138.0" mnemonicParsing="false" onAction="#decrypt" text="Decrypt" />
+      <Button layoutX="281.0" layoutY="244.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+      <TextField fx:id="keyOutput" layoutX="226.0" layoutY="171.0" promptText="Key Output" />
+      <Button fx:id="getKey" layoutX="139.0" layoutY="171.0" mnemonicParsing="false" text="Get Key" onAction="#getKey" />
+      <TextField fx:id="resultField" layoutX="226.0" layoutY="271.0" promptText="Encrypt/Decrypt Results" />
+   </children>
+</AnchorPane>
+
